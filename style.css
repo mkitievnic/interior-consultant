@@ -1,0 +1,319 @@
+*,*::before,*::after{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #181719;
+    color:#fff;
+}
+
+
+.content-page{
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    position:relative;
+}
+
+.content-page .logo,
+.content-page .menu{
+    width: 50%;
+    
+}
+
+.content-page .menu ul{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+}
+.content-page .logo h2{
+    display:inline;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 200;
+    border:1px solid #fff;
+    padding:8px;
+    text-transform: uppercase;
+}
+
+.content-page header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:50px;
+}
+
+
+.content-page .menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+
+.content-page .menu ul li{
+    padding:10px;
+}
+
+.content-page .menu ul li:hover{
+    text-decoration:underline;
+}
+.content-page .menu ul li a{
+    text-decoration: none;
+    
+}
+
+.content{
+    height: 80vh;
+    display:flex;
+    flex-direction: row;
+   
+}
+.content .textBx{
+    max-width:600px;
+    padding:40px;
+}
+
+.content .imgBx{
+    max-width:800px;
+    min-width:350px;
+    padding:20px;
+    position:relative;
+}
+.content .imgBx img{
+    width:100%;
+}
+
+.content .textBx h1{
+    font-family: 'Montserrat';
+    font-size:48px;
+    font-weight: 500;
+    padding:40px 0;
+}
+
+.content .textBx p{
+    font-family: 'Montserrat';
+    font-size:24px;
+    font-weight: 400;
+}
+
+.content .textBx a{
+    font-family: 'Montserrat';
+    font-size:18px;
+    font-weight: 700;
+    display: inline-block;
+    padding:40px 0;
+    text-decoration: none;
+    color:#fff;
+  
+}
+.content .textBx .enlace{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.content .textBx .enlace span{
+    color:#fff;
+}
+.card{
+    position:absolute;
+    right:calc(15% - 20px);
+    bottom:calc(5% - 50px);
+
+    width: 347px;
+    height:146px;
+    background-color: #181719;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color:#fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card .imgBxCard{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: blue;
+    background-image: url('photo2.png');
+    background-size: contain;
+    background-position:center;
+}
+
+.card .title{
+    padding:15px;
+    width:200px;
+}
+
+.card .title h3{
+    font-size: 14px;
+  
+}
+
+
+
+.card .title h4{
+    font-size: 12px;
+    color:#828282;
+}
+.card p{
+    font-weight: 700;
+    font-size:24px;
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+.lateralMenu{
+    width:100vw;
+    height: 100vh;
+    z-index: 1999;
+    position:absolute;
+    top:0;
+    right:-100vw;
+}
+.lateralMenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+.lateralMenu ul li{
+    list-style: none;
+    padding:10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.lateralMenu ul li:hover{
+    text-decoration: underline;
+}
+.lateralMenu ul li a{
+    text-decoration: none;
+}
+.button-close{
+    position:absolute;
+    right:10px;
+    top:10px;
+    z-index:9000;
+    
+}
+.button-menu{
+    display:none;
+}
+@media (max-width:375px){
+    .menu{
+/*         visibility: hidden; */
+        display:none;
+    }
+    
+    .button-menu{
+        display:inline;
+    }
+    .content{
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+       
+    }
+
+    .content .textBx h1 {
+        font-size: 36px;
+    }
+    .content .textBx p {
+        font-size: 14px;
+        width: 250px;
+        height: 80px;
+    }
+
+    .content .imgBx {
+        min-width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content .imgBx img {
+        width: 95%;
+    }
+
+    .content .imgBx {
+        padding: 5px;
+    }
+
+    .content-page .logo h2 {
+        border: 2px solid #fff;
+        font-size:12px;
+     }  
+     
+     .content-page header {
+        
+        padding: 20px 0;
+     }   
+     .content .textBx {
+        padding: 11px 0;
+        padding-right: 40px;
+     }
+
+     .content .textBx a {
+        padding: 17px 0;
+     }
+
+     .card {
+       width: 206px;
+       height: 117px;
+       padding:10px;
+       right: 78px;
+       top: 177px;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+
+     .card .title {
+        padding: 15px;
+        width: 125px;
+    }
+
+    .card p {
+        font-size: 14px;
+        width: 185px;
+    }
+
+    .material-icons .menu{
+        display:inline;
+    }
+
+    .material-icons .close{
+        display:none;
+    }
+    
+    .material-icons.menu.inactive{
+        display:none;   
+    }
+
+    .material-icons.menu.active{
+        display:inline;   
+    }
+
+    .material-icons.close.inactive{
+        display:none;   
+    }
+
+    .material-icons.close.active{
+        display:inline;   
+    }
+    
+    .lateralMenu.active{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        right:0;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    
+}

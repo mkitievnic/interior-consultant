@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Interior</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="content-page">
+        <header>
+            <div class="logo">
+                <h2>This Interior</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="button-menu" >
+                <span class="material-icons menu active" onclick="toggleMenu(); toggleMenuLateral();">menu</span>
+                <span class="material-icons close inactive" onclick="toggleClose();toggleMenuLateral();">close</span>
+            </div>
+            
+        </header>
+        <div class="content">
+            <div class="textBx">
+                <h1>Modern Interior</h1>
+                <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+                <div class="enlace">
+                    <a href="">Read More</a>
+                    <span class="material-icons">arrow_right_alt</span>
+                </div>
+            </div>
+            <div class="imgBx">
+                <img src="photo1.png" alt="Interior Design">
+                <div class="card">
+                    <div class="imgBxCard">
+                    </div>
+                    <div class="title">
+                        <h3>Aliza Webber</h3>
+                        <h4>Interior designer</h4>    
+                    </div>
+                    <p>Designed in 2020 by Aliza Webber</p>
+                </div>
+            </div>
+           
+        </div>
+        <div class="lateralMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="button-close" >
+                <span class="material-icons close" onclick="toggleClose();toggleMenuLateral();">close</span>
+            </div>
+        </div>
+        <footer>created by Juan Pablo Cabero - devChallenges.io</footer>
+    </div>
+    
+    <script>
+        function toggleMenu(){
+            const buttonMenu=document.querySelector('.button-menu .menu');
+            const buttonClose=document.querySelector('.button-menu .close');
+            buttonMenu.classList.toggle('inactive');
+            buttonMenu.classList.toggle('active');
+            buttonClose.classList.toggle('inactive');
+            buttonClose.classList.toggle('active');
+        }
+
+        function toggleClose(){
+            const buttonMenu=document.querySelector('.button-menu .menu');
+            const buttonClose=document.querySelector('.button-menu .close');
+            buttonClose.classList.toggle('inactive');
+            buttonClose.classList.toggle('active');
+            buttonMenu.classList.toggle('inactive');
+            buttonMenu.classList.toggle('active');
+        }    
+
+        function toggleMenuLateral(){
+            const lateralMenu=document.querySelector('.lateralMenu');
+            lateralMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
